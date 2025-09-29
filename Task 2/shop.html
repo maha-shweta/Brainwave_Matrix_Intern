@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VoltVibe</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <section id="header">
+            <a href="#"><img src="Images/Logos/logo.png" class="logo" alt="VoltVibe Logo" /></a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                    <li><a href="landing.html"><i class="fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="page-header">
+            <h2>#Stay Home</h2>
+            <p>Save more with coupons & up to 30% off!</p>
+        </section>
+
+        <section id="search-and-filters" class="section-p1">
+            <div id="search-bar">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search products..." 
+                    onkeyup="searchProducts()" 
+                />
+                <button id="searchButton" class="normal">Search</button>
+            </div>
+            
+            <div id="filters">
+                <label for="priceFilter">Sort by Price:</label>
+                <select id="priceFilter" onchange="filterByPrice()">
+                    <option value="default">Select</option>
+                    <option value="lowToHigh">Low to High</option>
+                    <option value="highToLow">High to Low</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="product1" class="section-p1">
+            <div class="pro-container">
+                <div class="pro" onclick="window.location.href='sproduct.html'" data-price="229.99" data-category="headphones">
+                    <img src="Images/Headphones/Headphones 1.png" alt="Headphones 1" />
+                    <div class="des">
+                        <span>Sonic Innovations</span>
+                        <h5>AcousticFlow Pro</h5>
+                        <p class="category">Headphones</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$229.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="129.00" data-category="headphones">
+                    <img src="Images/Headphones/Headphones 2.png" alt="charger 1" />
+                    <div class="des">
+                        <span>ElectroSound Gear</span>
+                        <h5>RhythmBuds Wireless</h5>
+                        <p class="category">Headphones</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$129.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="449.50" data-category="headphones">
+                    <img src="Images/Headphones/Headphones 3.png" alt="charger 1" />
+                    <div class="des">
+                        <span>PureTone Audio</span>
+                        <h5>StudioMonitors X</h5>
+                        <p class="category">Headphones</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$449.50</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="89.99" data-category="headphones">
+                    <img src="Images/Headphones/Headphones 4.png" alt="charger 1" />
+                    <div class="des">
+                        <span>SportSound Go</span>
+                        <h5>ActiveListen Tech</h5>
+                        <p class="category">Headphones</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$89.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="45.00" data-category="headphones">
+                    <img src="Images/Headphones/Headphones 5.png" alt="charger 1" />
+                    <div class="des">
+                        <span>Junior Audio</span>
+                        <h5>ComfyListen Kids</h5>
+                        <p class="category">Headphones</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$45.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="199.00" data-category="headphones">
+                    <img src="Images/Headphones/Headphones 6.png" alt="charger 1" />
+                    <div class="des">
+                        <span>GlobeTrekker Sound</span>
+                        <h5>TravelTune ANC</h5>
+                        <p class="category">Headphones</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$199.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="59.99" data-category="laptop stand">
+                    <img src="Images/Stands/Stands 1.png" alt="charger 1" />
+                    <div class="des">
+                        <span>DeskSolutions Inc.</span>
+                        <h5>ErgoLift Pro</h5>
+                        <p class="category">Laptop Stand</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$59.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="34.50" data-category="laptop stand">
+                    <img src="Images/Stands/Stands 2.png" alt="charger 1" />
+                    <div class="des">
+                        <span>MobileGear Innovations</span>
+                        <h5>Fold Away Portable</h5>
+                        <p class="category">Laptop Stand</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$34.50</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="product1" class="section-p1">
+            <div class="pro-container">
+                <div class="pro" data-price="85.00" data-category="laptop stand">
+                    <img src="Images/Stands/Stands 3.png" alt="Headphones 1" />
+                    <div class="des">
+                        <span>Visionary Stands</span>
+                        <h5>CoolFlow Creator</h5>
+                        <p class="category">Laptop Stand</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$85.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div> 
+                <div class="pro" data-price="29.99" data-category="iPhone case">
+                    <img src="Images/Iphone Cover/iphone cover 1.png" alt="charger 1" />
+                    <div class="des">
+                        <span>LumiCase Designs</span>
+                        <h5>AuraGlow for iPhone 15 Pro Max</h5>
+                        <p class="category">iPhone Case</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$29.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="39.00" data-category="iPhone case">
+                    <img src="Images/Iphone Cover/iphone cover 2.png" alt="charger 1" />
+                    <div class="des">
+                        <span>ArmorGuard Systems</span>
+                        <h5>RuggedShield for iPhone 14 Plus</h5>
+                        <p class="category">iPhone Case</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$39.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" onclick="window.location.href='sproduct1.html'" data-price="24.95" data-category="iPhone case">
+                    <img src="Images/Iphone Cover/iphone cover 3.png" alt="charger 1" />
+                    <div class="des">
+                        <span>GreenWave Cases</span>
+                        <h5>EcoSleek for iPhone 13 Mini</h5>
+                        <p class="category">iPhone Case</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$24.95</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="45.00" data-category="iPhone case">
+                    <img src="Images/Iphone Cover/iphone cover 4.png" alt="charger 1" />
+                    <div class="des">
+                        <span>Executive Carry</span>
+                        <h5>WalletFolio for iPhone 12 Pro</h5>
+                        <p class="category">iPhone Case</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$45.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="22.00" data-category="iPhone case">
+                    <img src="Images/Iphone Cover/iphone cover 5.png" alt="charger 1" />
+                    <div class="des">
+                        <span>Visionary Protectors</span>
+                        <h5>ClearView MagSafe for iPhone SE (3rd Gen)</h5>
+                        <p class="category">iPhone Case</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$22.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" onclick="window.location.href='sproduct2.html'" data-price="29.99" data-category="power bank">
+                    <img src="Images/Power Banks/bank 1 - Copy.png" alt="charger 1" />
+                    <div class="des">
+                        <span>ElectroCharge Solutions</span>
+                        <p class="category">Power Bank</p>
+                        <h5>VoltPack 10K</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$29.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="75.00" data-category="power bank">
+                    <img src="Images/Power Banks/bank 2 - Copy.png" alt="charger 1" />
+                    <div class="des">
+                        <span>Apex Power Co.</span>
+                        <h5>TitanFuel 20K PD</h5>
+                        <p class="category">Power Bank</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$75.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="product1" class="section-p1">
+            <div class="pro-container">
+                <div class="pro" data-price="49.00" data-category="power bank">
+                    <img src="Images/Power Banks/bank 3 - Copy.png" alt="Headphones 4" />
+                    <div class="des">
+                        <span>GreenCircuit Innovations</span>
+                        <h5>SolarStream 5K</h5>
+                        <p class="category">Power Bank</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$49.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="189.99" data-category="keyboard">
+                    <img src="Images/Keyboard/keyboard 1.png" alt="charger 1" />
+                    <div class="des">
+                        <span>ErgoKeys</span>
+                        <h5>Ergonomic Split Mechanical Keyboard</h5>
+                        <p class="category">Keyboard</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$189.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="74.50" data-category="keyboard">
+                    <img src="Images/Keyboard/keyboard 2.png" alt="charger 1" />
+                    <div class="des">
+                        <span>Swift Strike Peripherals</span>
+                        <h5>Compact Wireless Gaming Keyboard</h5>
+                        <p class="category">Keyboard</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$74.50</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="129.00" data-category="keyboard">
+                    <img src="Images/Keyboard/keyboard 3.png" alt="charger 1" />
+                    <div class="des">
+                        <span>Retro Typewriter-Style Keyboard</span>
+                        <h5>VintageType Co.</h5>
+                        <p class="category">Keyboard</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$129.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="49.99" data-category="charger">
+                    <img src="Images/Chargers/charger 1.png" alt="charger 1" />
+                    <div class="des">
+                        <span>PowerFlux</span>
+                        <h5>Universal GaN Fast Charger</h5>
+                        <p class="category">Charger</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$49.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="34.00" data-category="charger">
+                    <img src="Images/Chargers/charger 2 - Copy.png" alt="charger 1" />
+                    <div class="des">
+                        <span>AuraCharge</span>
+                        <h5>Wireless Charging Pad with Stand</h5>
+                        <p class="category">Charger</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$34.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="59.99" data-category="charger">
+                    <img src="Images/Chargers/charger 3 - Copy.png" alt="charger 1" />
+                    <div class="des">
+                        <span>HubConnect</span>
+                        <h5>Multi-Port Desktop Charging Station</h5>
+                        <p class="category">Charger</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$59.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="19.99" data-category="charger">
+                    <img src="Images/Chargers/charger 4 - Copy.png" alt="charger 1" />
+                    <div class="des">
+                        <span>MiniVolt</span>
+                        <h5>Ultra-Compact Wall Charger</h5>
+                        <p class="category">Charger</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$19.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="pagination" class="section-p1">
+            <a href="shop.html">1</a>
+            <a href="shop1.html">2</a>
+            <a href="#"><i class="fas fa-arrow-right"></i></a>
+        </section>
+
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h3>Sign Up For Newsletters</h4>
+                <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+            </div>
+            <div class="form">
+                <input type="email" placeholder="Your email address" />
+                <button class="normal">Sign Up</button>
+            </div>
+        </section>
+
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="Images/Logos/logo.png" alt="VoltVibe Logo" />
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> 123 Tech Avenue, Silicon City, CA 94043</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="Images/Logos/app.jpg" alt="App Store" />
+                    <img src="Images/Logos/play.jpg" alt="Google Play" />
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="Images/Logos/pay.png" alt="Payment Methods" />
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024, VoltVibe - All Rights Reserved</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

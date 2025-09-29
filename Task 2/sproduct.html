@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VoltVibe</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <section id="header">
+            <a href="#"><img src="Images/Logos/logo.png" class="logo" alt="VoltVibe Logo" /></a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html" href="index.html">Home</a></li>
+                    <li><a class="active" href="shop.html">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                    <li><a href="landing.html"><i class="fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="Images/Headphones/Headphones 1.png" width="100%" id="MainImg" alt="Ergonomic Split Mechanical Keyboard" />
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="Images/Headphones/headphones_1_blue.png" width="100%" class="small-img" alt="Ergonomic Split Mechanical Keyboard" />
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Images/Headphones/headphones_1_red.png" width="100%" class="small-img" alt="Ergonomic Split Mechanical Keyboard" />
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Images/Headphones/headphones_1_white.png" width="100%" class="small-img" alt="Ergonomic Split Mechanical Keyboard" />
+                    </div>
+                </div>
+            </div>
+            <div class="single-pro-details">
+                <h4>Headphones</h4>
+                <h2>AcoustiFlow Pro</h2>
+                <h1>$299.99</h1>
+                <select>
+                    <option>Select Color</option>
+                    <option>Black</option>
+                    <option>Blue</option>
+                    <option>Red</option>
+                    <option>White</option>
+                </select>
+                <input type="number" value="1" />
+                <button class="normal" onclick="addToCart()">Add To Cart</button>
+                <h4>Product Details</h4>
+                <span>Experience unparalleled audio clarity and deep, resonant bass with the AcoustiFlow Pro. Designed for audiophiles, these over-ear headphones feature active noise cancellation, plush memory foam earcups for ultimate comfort, and a sleek, foldable design. Enjoy up to 40 hours of continuous playback on a single charge.</span>
+                <p id="cartMessage" style="display: none; color: green; font-weight: bold;">Added to Cart Successfully</p>
+            </div>
+        </section>
+
+        <section id="product1" class="section-p1">
+            <h2>Featured Products</h2>
+            <p>Latest Releases</p>
+            <div class="pro-container">
+                <div class="pro" onclick="window.location.href='sproduct1.html'" data-price="24.95" data-category="iPhone case">
+                    <img src="Images/Iphone Cover/iphone cover 3.png" alt="charger 1" />
+                    <div class="des">
+                        <span>GreenWave Cases</span>
+                        <h5>EcoSleek for iPhone 13 Mini</h5>
+                        <p class="category">iPhone Cases</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$24.95</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="Images/Smart Watch/smartwatch 5.png" alt="charger 1" />
+                    <div class="des">
+                        <span>Modern Wear</span>
+                        <h5>Sleek Everyday Smartwatch</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$220.07</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="Images/Chargers/charger 1.png" alt="charger 1" />
+                    <div class="des">
+                        <span>MiniVolt</span>
+                        <h5>Ultra-Compact Wall Charger</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$19.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="Images/Keyboard/keyboard 2.png" alt="charger 1" />
+                    <div class="des">
+                        <span>Ergokeys</span>
+                        <h5>Ergonomic Split Mechanical Keyboard</h5>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$189.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h3>Sign Up For Newsletters</h4>
+                <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+            </div>
+            <div class="form">
+                <input type="email" placeholder="Your email address" />
+                <button class="normal">Sign Up</button>
+            </div>
+        </section>
+
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="Images/Logos/logo.png" alt="VoltVibe Logo" />
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> 123 Tech Avenue, Silicon City, CA 94043</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="Images/Logos/app.jpg" alt="App Store" />
+                    <img src="Images/Logos/play.jpg" alt="Google Play" />
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="Images/Logos/pay.png" alt="Payment Methods" />
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024, VoltVibe - All Rights Reserved</p>
+            </div>
+        </footer>
+
+        <script>
+            var MainImg = document.getElementById("MainImg");
+            var smallimg = document.getElementsByClassName("small-img");
+
+            smallimg[0].onclick = function () {
+                MainImg.src = smallimg[0].src;
+            };
+            smallimg[1].onclick = function () {
+                MainImg.src = smallimg[1].src;
+            };
+            smallimg[2].onclick = function () {
+                MainImg.src = smallimg[2].src;
+            };
+
+            function addToCart() {
+            // Show the "Added to Cart Successfully" message
+            document.getElementById("cartMessage").style.display = "block";
+            
+            // Hide the message after 3 seconds (optional)
+            setTimeout(function() {
+                document.getElementById("cartMessage").style.display = "none";
+            }, 3000);
+            }
+        </script>
+
+        <script src="script.js"></script>
+    </body>
+</html>

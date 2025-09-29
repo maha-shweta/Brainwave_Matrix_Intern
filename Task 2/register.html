@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />        
+    <title>VoltVibe - Register</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_start.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Register</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
+            </div>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Phone Number" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit" class="normal">Register</button>
+            <div class="login-register">
+                <p>Already have an account? <a href="login.html" class="register-link">Login</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+            window.location.href = "login.html"; 
+        });
+    </script>
+</body>
+</html>

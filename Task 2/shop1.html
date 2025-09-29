@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>VoltVibe</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <section id="header">
+            <a href="#"><img src="Images/Logos/logo.png" class="logo" alt="VoltVibe Logo" /></a>
+            <div>
+                <ul id="navbar">
+                    <li><a href="index.html" href="index.html">Home</a></li>
+                    <li><a class="active">Shop</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-bag"></i></a></li>
+                    <li><a href="landing.html"><i class="fas fa-power-off"></i></a></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="page-header">
+            <h2>#Stay Home</h2>
+            <p>Save more with coupons & up to 30% off!</p>
+        </section>
+
+        <section id="search-and-filters" class="section-p1">
+            <div id="search-bar">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search products..." 
+                    onkeyup="searchProducts()" 
+                />
+                <button id="searchButton" class="normal">Search</button>
+            </div>
+            
+            <div id="filters">
+                <label for="priceFilter">Sort by Price:</label>
+                <select id="priceFilter" onchange="filterByPrice()">
+                    <option value="default">Select</option>
+                    <option value="lowToHigh">Low to High</option>
+                    <option value="highToLow">High to Low</option>
+                </select>
+            </div>
+        </section>
+        
+        <section id="product1" class="section-p1">
+            <div class="pro-container">
+                <div class="pro" data-price="21.99" data-category="android cases">
+                    <img src="Images/Android Cover/android cover 1.png" alt="Headphones 1" />
+                    <div class="des">
+                        <span>ClearTech Protectors</span>
+                        <h5>CrystalGuard for Samsung Galaxy S24 Ultra</h5>
+                        <p class="category">Android Cases</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$21.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="28.00" data-category="android cases">
+                    <img src="Images/Android Cover/android cover 2.png" alt="charger 1" />
+                    <div class="des">
+                        <span>EarthFriendly Cases</span>
+                        <h5>BioFlex for Google Pixel 8 Pro</h5>
+                        <p class="category">Android Cases</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$28.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="34.50" data-category="android cases">
+                    <img src="Images/Android Cover/android cover 3.png" alt="charger 1" />
+                    <div class="des">
+                        <span>CityGuard Cases</span>
+                        <h5>Urban Armor for OnePlus 12</h5>
+                        <p class="category">Android Cases</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$34.50</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="42.00" data-category="android cases">
+                    <img src="Images/Android Cover/android cover 4.png"alt="charger 1" />
+                    <div class="des">
+                        <span>LuxeHold Accessories</span>
+                        <h5>WalletFolio for Xiaomi 14 Pro</h5>
+                        <p class="category">Android Cases</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$42.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="49.99" data-category="android cases">
+                    <img src="Images/Android Cover/android cover 5.png" alt="charger 1" />
+                    <div class="des">
+                        <span>PixelPlay Peripherals</span>
+                        <h5>GamerShield for ASUS ROG Phone 8</h5>
+                        <p class="category">Android Cases</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$49.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="18.99" data-category="mouse pads">
+                    <img src="Images/Mouse Pads/pad_1.png" alt="charger 1" />
+                    <div class="des">
+                        <span>ComfortGlide</span>
+                        <h5>Ergonomic Wrist Rest Mouse Pad</h5>
+                        <p class="category">Mouse Pads</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$18.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="29.99" data-category="mouse pads">
+                    <img src="Images/Mouse Pads/pad_2.png" alt="charger 1" />
+                    <div class="des">
+                        <span>ApexGaming Gear</span>
+                        <h5>Large Gaming Mouse Pad</h5>
+                        <p class="category">Mouse Pads</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$29.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro">
+                    <img src="Images/Mouse Pads/pad_3.png" alt="charger 1" />
+                    <div class="des">
+                        <span>PowerDesk Accessories</span>
+                        <h5>Desk Mat with Wireless Charging</h5>
+                        <p class="category">Mouse Pads</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$49.50</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="product1" class="section-p1">
+            <div class="pro-container">
+                <div class="pro" data-price="149.00" data-category="speakers">
+                    <img src="Images/Speakers/speaker_1.png" alt="Headphones 4" />
+                    <div class="des">
+                        <span>AuraSound</span>
+                        <h5>Smart Home SpeakerK</h5>
+                        <p class="category">Speakers</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$149.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="59.99" data-category="speakers">
+                    <img src="Images/Speakers/speaker_2.png" alt="charger 1" />
+                    <div class="des">
+                        <span>GoTunes Audio</span>
+                        <h5>Portable Bluetooth Speaker</h5>
+                        <p class="category">Speakers</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$59.99</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="79.00" data-category="speakers">
+                    <img src="Images/Speakers/speaker_3.png" alt="charger 1" />
+                    <div class="des">
+                        <span>ClearSound Peripherals</span>
+                        <h5>Desktop Computer Speakers</h5>
+                        <p class="category">Speakers</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$79.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+                <div class="pro" data-price="110.00" data-category="speakers">
+                    <img src="Images/Speakers/speaker_4.png" alt="charger 1" />
+                    <div class="des">
+                        <span>RetroWave Audio</span>
+                        <h5>Vintage Bluetooth Radio Speaker</h5>
+                        <p class="category">Speakers</p>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>$110.00</h4>
+                    </div>
+                    <a href="#" class="van"><i class="fas fa-shopping-cart cart"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="pagination" class="section-p1">
+            <a href="shop.html">1</a>
+            <a href="shop1.html">2</a>
+            <a href="#"><i class="fas fa-arrow-right"></i></a>
+        </section>
+
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h3>Sign Up For Newsletters</h4>
+                <p>Get E-mail updates about our latest shop and <span>special offers.</span></p>
+            </div>
+            <div class="form">
+                <input type="email" placeholder="Your email address" />
+                <button class="normal">Sign Up</button>
+            </div>
+        </section>
+
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="Images/Logos/logo.png" alt="VoltVibe Logo" />
+                <h4>Contact</h4>
+                <p><strong>Address:</strong> 123 Tech Avenue, Silicon City, CA 94043</p>
+                <p><strong>Phone:</strong> +1 234 567 890</p>
+                <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="Images/Logos/app.jpg" alt="App Store" />
+                    <img src="Images/Logos/play.jpg" alt="Google Play" />
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="Images/Logos/pay.png" alt="Payment Methods" />
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024, VoltVibe - All Rights Reserved</p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
