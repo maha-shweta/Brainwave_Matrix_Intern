@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plan-tastic | Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body style="font-family: 'Nunito', sans-serif;">
+
+<header>
+    <h1>Dashboard</h1>
+    <h2 id="greeting"></h2>
+    <p>Here’s what’s coming up this week!</p>
+</header>
+
+<main>
+<section>
+    <div class="button-group">
+        <button onclick="window.location.href='add_task.html'">Add Task</button>
+        <button onclick="window.location.href='add_event.html'">Add Event</button>
+        <button id="refreshBtn">Refresh Dashboard</button>
+        <button onclick="window.location.href='index.html'">Logout</button>
+    </div>
+</section>
+
+    <div class="row">
+        <section class="feature-box" id="pendingTasksBox">
+            <h2>Pending Tasks</h2>
+            <ul id="pendingTasks"></ul>
+        </section>
+
+        <section class="feature-box" id="upcomingEventsBox">
+            <h2>Upcoming Events (Next 7 Days)</h2>
+
+            <h3>🎂 Birthdays</h3>
+            <ul id="birthdayList"></ul>
+
+            <h3>📅 Meetings</h3>
+            <ul id="meetingList"></ul>
+
+            <h3>⏰ Reminders</h3>
+            <ul id="reminderList"></ul>
+            
+            <h3>📌 Appointments</h3>
+            <ul id="appointmentList"></ul>
+
+            <h3>✨ Other Events</h3>
+            <ul id="otherList"></ul>
+        </section>
+    </div>
+
+    <div class="row">
+        <section class="feature-box" id="taskChartBox">
+            <h2>Task Completion</h2>
+            <canvas id="taskChart" width="400" height="200"></canvas>
+        </section>
+
+        <section class="feature-box" id="eventChartBox">
+            <h2>Event Status</h2>
+            <canvas id="eventChart" width="400" height="200"></canvas>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Plan-tastic. All rights reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="dashboard.js"></script>
+</body>
+</html>
